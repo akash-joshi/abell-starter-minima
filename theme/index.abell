@@ -17,7 +17,7 @@
     {{ DarkModeToggle() }}
     <h1>{{ globalMeta.siteName }}</h1>
     <div class="header-bio">
-      Abell Minima is a starter blog built with Abell. <br/>This template is designed and maintained by <b>{{ globalMeta.name }}</b> you can follow them on <a href="https://twitter.com/{{ globalMeta.twitter }}">Twitter @{{ globalMeta.twitter }}</a>.
+      This blog will give you deeper insights into the makings of a Static-Site Generator. <br/>This blog is written and maintained by <b>{{ globalMeta.name }}</b> you can follow them on <a href="https://twitter.com/{{ globalMeta.twitter }}">Twitter @{{ globalMeta.twitter }}</a>.
     </div>
   </header>
   <main>
