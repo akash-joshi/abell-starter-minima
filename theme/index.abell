@@ -6,7 +6,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Welcome to the {{ globalMeta.siteName }}, A blog by {{ globalMeta.name }}" />
+  <meta name="description" content="Welcome to the {{ globalMeta.siteName }}, a blog by {{ globalMeta.name }}." />
+  <meta name="og:image" content="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/index.css">
@@ -37,15 +38,26 @@
           `)
           .join('')
       }}
+      
+      <div style="display:flex; flex-wrap: wrap; margin-top: -15px;">
+    <a style="margin-right: 1em; margin-top: 15px;" target="_blank" rel="noopener noreferer" class="twitter-share-button blog dynamic-url shadow" href="https://twitter.com/intent/tweet?text=" data-size="large">
+      <img width="20" style="position: relative;top:4px;" alt="Twitter Logo" src="../icons/twitter.svg"> &nbsp;Share on Twitter
+    </a>
+    <a style="margin-top: 15px;" target="_blank" rel="noopener noreferer" class="twitter-share-button rss-button blog shadow" href="https://akash.substack.com/feed" data-size="large">
+    <img width="20" style="position: relative;top:4px;" alt="Twitter Logo" src="../icons/book.svg"> &nbsp;Subscribe through RSS
+    </a>
+    </div>
     </div>
   </main>
   <footer>
-    <div style="text-align: right;">© <span id="footer-year"></span> <a href="https://akashj.com">Akash Joshi</a>, Built with <a href="https://github.com/abelljs/abell">Abell</a></div>
+    <div style="text-align: right;"> © <span id="footer-year"></span> <a href="https://akashj.com">Akash Joshi</a>, Built with <a href="https://github.com/abelljs/abell">Abell</a></div>
   </footer>
   
   <script defer src="./js/themeHandler.js"></script>
   <script>
     document.querySelector('#footer-year').innerHTML = new Date().getFullYear();
+    document.querySelectorAll('.twitter-share-button.blog.dynamic-url')
+      .forEach(shareEl => shareEl.href += location.href);
   </script>
 </body>
 </html>

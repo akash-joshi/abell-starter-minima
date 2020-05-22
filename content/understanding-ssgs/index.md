@@ -13,6 +13,8 @@ and provide you with a static, production-ready website just like this one 😉.
 
 <img src="Screenshot_2020-05-18_at_3.53.45_PM.png">
 
+## Introduction
+
 To understand how SSGs do this, we’ll be looking at [AbellJS](https://github.com/abelljs/abell) in particular, which is a Static Site Generator which allows you to use vanilla JS and HTML with minimal new syntax that the developer has to learn ( just \{\{ }} around the JS you want to execute ).
 
 Firstly, let’s go to [https://github.com/abelljs/abell](https://github.com/abelljs/abell) to check out their README and examples. You can clone the repository locally and run `npm i` to get started.
@@ -32,6 +34,8 @@ To understand this code we first need to know what Abell does. If you check the 
 1. A `content` folder containing all the static assets and data for the final site.
 2. A `theme` folder containing all the `.abell` files which are used for theming your website.
 3. An `abell.config.js` file containing the config for your website (themes source folder, destination folder, and content folder).
+
+## Understanding the Build Loop
 
  We will understand the responsibilities and effects of the build function as we move through the code.
 
@@ -105,3 +109,10 @@ For any other `.abell` other than the content themes (stored in [#slug]), anothe
 This function is a bit different and more complex, building the head elements with stylesheet and script imports first, before rendering it with the `abellRenderer`.
 
 After this function finishes successfully, that’s about it. The build loop has completed successfully and you should have your static website ready at `dist`.
+
+## Conclusion
+
+That's it ! Now you host this static website on a solution like [Netlify](https://netlify.com) and you're done 😁 ! Thanks for reading this blog ! To learn more, you can click on one of the links below. Subscribe if you feel like I helped you :)
+
+- [https://github.com/abelljs/abell](https://github.com/abelljs/abell)
+- [https://www.netlify.com/blog/2020/04/14/what-is-a-static-site-generator-and-3-ways-to-find-the-best-one/](https://www.netlify.com/blog/2020/04/14/what-is-a-static-site-generator-and-3-ways-to-find-the-best-one/)
