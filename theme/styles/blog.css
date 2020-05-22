@@ -3,6 +3,7 @@ main{
 }
 p{
   margin: 0px;
+  margin-bottom: 1em;
 }
 div.blog-container{
   padding-top: 30px;
@@ -49,4 +50,8 @@ hr{
   main{
     padding: 40px 20px;
   }
+}
+
+.blog-container > p > img {
+  width: 100%;
 }

@@ -21,7 +21,7 @@
 <body>
   <main>
     {{ DarkModeToggle() }}
-    <br/>
+    <a href="/"><h1 style="margin-bottom:0px">← Take Me Home</h1></a>
     <div class="blog-container">
       {{ $importContent(`${meta.$slug}/index.md`) }} <!-- renders content of blog -->
     </div>
@@ -30,10 +30,18 @@
     <a target="_blank" rel="noopener noreferer" class="twitter-share-button blog dynamic-url shadow" href="https://twitter.com/intent/tweet?text=" data-size="large">
       <img width="20" style="position: relative;top:4px;" alt="Twitter Logo" src="../icons/twitter.svg"> &nbsp;Share on Twitter
     </a>
+
+    <script src="https://utteranc.es/client.js"
+        repo="[ENTER REPO HERE]"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
   </main>
 
   <footer>
-    <div style="text-align: right;">© <span id="footer-year"></span>, Built with <a href="https://github.com/abelljs/abell">Abell</a></div>
+    <div style="text-align: right;">© <span id="footer-year"></span> <a href="https://akashj.com">Akash Joshi</a>, Built with <a href="https://github.com/abelljs/abell">Abell</a></div>
   </footer>
   
   <script src="../js/themeHandler.js"></script>

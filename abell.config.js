@@ -3,8 +3,8 @@ module.exports = {
   destinationPath: 'dist',
   contentPath: 'content',
   globalMeta: {
-    siteName: 'Abell Blog',
-    name: 'Hoomans of Abell Land',
+    siteName: 'Akashic Records',
+    name: 'Akash',
     twitter: 'akashjdotcom'
   }
 }

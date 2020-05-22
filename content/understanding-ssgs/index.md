@@ -1,5 +1,7 @@
 # Understanding the Build Loop of a Static Site Generator with Abell 🌀
 
+![Cover Photo](flowers.png)
+
 If you are intermediate into programming, learning how Static Site Generators work behind-the-scenes is one of those challenges which are really interesting and test your programming skills with a language in depth.
 
 Before we get into the guts of it, lets give a brief introduction to Static Site Generators, or SSGs. SSGs are basically tools which take your:
@@ -9,9 +11,9 @@ Before we get into the guts of it, lets give a brief introduction to Static Site
 
 and provide you with a static, production-ready website just like this one 😉.
 
-![Screenshot_2020-05-18_at_3.53.45_PM.png](Screenshot_2020-05-18_at_3.53.45_PM.png)
+<img src="Screenshot_2020-05-18_at_3.53.45_PM.png">
 
-To understand how SSGs do this, we’ll be looking at [AbellJS](https://github.com/abelljs/abell) in particular, which is a Static Site Generator which allows you to use vanilla JS and HTML with minimal new syntax that the developer has to learn ( just {{ }} around the JS you want to execute ).
+To understand how SSGs do this, we’ll be looking at [AbellJS](https://github.com/abelljs/abell) in particular, which is a Static Site Generator which allows you to use vanilla JS and HTML with minimal new syntax that the developer has to learn ( just \{\{ }} around the JS you want to execute ).
 
 Firstly, let’s go to [https://github.com/abelljs/abell](https://github.com/abelljs/abell) to check out their README and examples. You can clone the repository locally and run `npm i` to get started.
 
